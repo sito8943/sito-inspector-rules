@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Sito Inspector Rules",
+  "version": "1.0.0",
+  "license": "MPL-2.0",
+  "description": "Firefox-style alignment guides: hover any element to see dashed rulers extending from its edges across the page. Follows the element selected in DevTools.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@sito-inspector-rules.sito8943.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Toggle alignment guides (Alt+Shift+R)",
+    "default_icon": {
+      "48": "icon.png",
+      "128": "icon128.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+R",
+        "mac": "Alt+Shift+R"
+      },
+      "description": "Toggle alignment guides"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon128.png"
+  },
+  "devtools_page": "devtools.html"
+}
