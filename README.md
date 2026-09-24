@@ -16,7 +16,8 @@ Chromium browser (and Firefox too).
 - Click to pin an element (guides stay while you move the mouse). Click again to unpin.
 - `Esc` turns the guides off (click the pinned element or anywhere to unpin instead).
 - Guides follow scroll and resize.
-- Only `activeTab` + `scripting`; nothing is injected until you toggle it on.
+- The toolbar icon turns grey and is disabled on pages where extensions can't run (`chrome://`, the Web Store, `about:` …).
+- Only `activeTab`, `scripting` and `tabs` (to read tab URLs for the icon state); nothing is injected until you toggle it on.
 
 ## Files
 
@@ -24,7 +25,7 @@ Chromium browser (and Firefox too).
 - `background.js` — injects the content script on demand and toggles it, sets badge.
 - `content.js`, `content.css` — overlay drawing and interaction.
 - `devtools.html`, `devtools.js` — forwards the DevTools selection to the page.
-- `icon.png`, `icon128.png` — toolbar icons.
+- `icon.png`, `icon128.png` — toolbar icons; `icon-off*.png` — greyed variant for blocked pages.
 
 ## Install (Chrome / Edge / Brave, unpacked)
 

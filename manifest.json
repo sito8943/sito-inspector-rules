@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Sito Inspector Rules",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MPL-2.0",
   "description": "Firefox-style alignment guides: hover any element to see dashed rulers extending from its edges across the page.",
   "browser_specific_settings": {
@@ -17,7 +17,8 @@
   },
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "tabs"
   ],
   "action": {
     "default_title": "Toggle alignment guides (Alt+Shift+R)",
