@@ -3,7 +3,7 @@
   "name": "Sito Inspector Rules",
   "version": "1.0.0",
   "license": "MPL-2.0",
-  "description": "Firefox-style alignment guides: hover any element to see dashed rulers extending from its edges across the page. Follows the element selected in DevTools.",
+  "description": "Firefox-style alignment guides: hover any element to see dashed rulers extending from its edges across the page.",
   "browser_specific_settings": {
     "gecko": {
       "id": "@sito-inspector-rules.sito8943.com",
