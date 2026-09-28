@@ -34,6 +34,19 @@ Chromium browser (and Firefox too).
 3. Click **Load unpacked** and pick this folder.
 4. Pin the icon, open any page, click the icon (or `Alt+Shift+R`).
 
+## Shortcut not working?
+
+Chrome only *suggests* `Alt+Shift+R`; it won't bind it if another extension already uses
+that combination, or if the extension was updated from a previous install. Nothing in the
+extension can force it.
+
+1. Open `chrome://extensions/shortcuts`.
+2. Find **Sito Inspector Rules** → *Toggle alignment guides*.
+3. Set `Alt+Shift+R` (`Option+Shift+R` on Mac) and keep the scope as **In Chrome**.
+
+The shortcut is also intentionally disabled on pages where extensions can't run
+(`chrome://`, the Web Store, `about:` …) — the greyed icon means the same thing.
+
 ## Install (Firefox, temporary)
 
 1. `about:debugging#/runtime/this-firefox` → **Load Temporary Add-on…** → pick `manifest.json`.
